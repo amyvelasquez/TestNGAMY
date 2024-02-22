@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/amyvelasquez/IdeaProjects/TestNG">
+        <classes>
+            <class name="com.testng.basics.class1.LoginTest1">
+                <methods>
+                    <include name="validLogin"/>
+                    <include name="validationOfTitle"/>
+                </methods>
+            </class>
+            <class name="com.testng.basics.class1.PreAndPostCondition">
+                <methods>
+                    <include name="firstFunction"/>
+                    <include name="secondFunction"/>
+                    <include name="thirdFunction"/>
+                </methods>
+            </class>
+            <class name="com.testng.basics.class1.Task1">
+                <methods>
+                    <include name="firstMethod"/>
+                    <include name="secondMethod"/>
+                </methods>
+            </class>
+            <class name="com.testng.basics.class2.Assertion">
+                <methods>
+                    <include name="assertVerification"/>
+                </methods>
+            </class>
+            <class name="com.testng.basics.class2.EnableAndDisable">
+                <methods>
+                    <include name="invalidLogin"/>
+                </methods>
+            </class>
+            <class name="com.testng.basics.class2.Priority">
+                <methods>
+                    <include name="logoutMethod"/>
+                    <include name="loginMethod"/>
+                    <include name="enterCredentialsMethod"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
